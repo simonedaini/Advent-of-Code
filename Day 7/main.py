@@ -2,9 +2,6 @@ lines = None
 with open("./input.txt") as f:
     lines = f.readlines()
 
-"/a/b/asd.txt"
-size = 3
-# d = {"/a/b": 0}
 d = {}
 
 current_path = ""
