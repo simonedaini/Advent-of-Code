@@ -3,9 +3,13 @@ with open("./input.txt") as f:
     lines = f.readlines()
 
 d = {}
-
+count = 0
 current_path = ""
 for line in lines:
+    if count == 10000000000000000:
+        break
+    else:
+        count += 1
     if " cd " in line:
         if ".." in line:
             if len(current_path.split("/")) > 2:
